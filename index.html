@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ily A</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .widget {
+            background-color: #98c1de; /* Colore azzurro chiaro */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50; /* Verde per il "Sì" */
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        .no-button {
+            background-color: #f44336; /* Rosso per il "No" */
+        }
+    </style>
+</head>
+<body>
+    <div class="widget">
+        <h1>Mi ami?</h1>
+        <p id="risposta"></p>
+        <button onclick="rispostaSi()">Sì</button>
+        <button onclick="rispostaNo()" class="no-button">No</button>
+    </div>
+
+    <script>
+        function rispostaSi() {
+            document.getElementById("risposta").innerHTML = "Anche io! <3";
+        }
+
+        function rispostaNo() {
+            document.getElementById("risposta").innerHTML = "Cattivona! Io si invece... :3";
+        }
+    </script>
+</body>
+</html>
